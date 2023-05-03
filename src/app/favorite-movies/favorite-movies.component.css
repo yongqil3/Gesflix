@@ -1,0 +1,22 @@
+.p1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.hand-commands {
+    margin-top: 550px;
+    margin-right: 100px;
+}
+
+.horizontal {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    display: inline-block;
+}

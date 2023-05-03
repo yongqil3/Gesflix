@@ -1,0 +1,50 @@
+<header style="font-size: 60px;" >Movie Recommender-Home
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"> -->
+
+</header>
+<div class="body">
+<app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
+
+<!-- <div class="horizontal">
+<p><i style="color:rgb(255, 255, 255);font-size:25px">Browse Movies: </i></p>
+<ul>
+  <li style="color:white;font-size:30px" *ngFor="let browseType of browseTypes">
+    {{ browseType }}
+  </li>
+</ul>
+</div> -->
+<div style="color:black;font-size:30px; margin-right: 90ch;">Currently selected:</div>
+<div style="color:black;font-size:35px" [innerHTML]="currentBrowseType"></div>
+
+ <div class="horizontal" >
+    <ng-container *ngFor="let browseType of browseTypes; let i = index">
+      <li style="color:black;font-size:45px">   {{ browseType }} </li>
+    </ng-container>
+  </div>
+<!-- <ul class="list-group list-group-light">
+  <li style="color:rgb(206, 20, 41);font-size:40px" class="list-group-item px-3 border-0 rounded-3 mb-2">Browse Movies</li>
+
+  <li style="color:rgb(255, 192, 198);font-size:35px"class="list-group-item px-3 border-0 rounded-3 list-group-item-primary mb-2">Popular </li>
+  <li style="color:rgb(255, 192, 198);font-size:35px"class="list-group-item px-3 border-0 rounded-3 list-group-item-secondary mb-2">
+    Now Playing
+  </li>
+  <li style="color:rgb(255, 192, 198);font-size:35px" class="list-group-item px-3 border-0 rounded-3 list-group-item-success mb-2">Top Rated</li>
+  <li style="color:rgb(255, 192, 198);font-size:35px"class="list-group-item px-3 border-0 rounded-3 list-group-item-danger mb-2">Upcoming</li>
+  <li style="color:rgb(255, 192, 198);font-size:35px"class="list-group-item px-3 border-0 rounded-3 list-group-item-warning mb-2">Adventure</li>
+  <li style="color:rgb(255, 192, 198);font-size:35px"class="list-group-item px-3 border-0 rounded-3 list-group-item-info mb-2">Action</li>
+  <li style="color:rgb(255, 192, 198);font-size:35px"class="list-group-item px-3 border-0 rounded-3 list-group-item-light mb-2">Comedy</li>
+  <li style="color:rgb(255, 192, 198);font-size:35px"class="list-group-item px-3 border-0 rounded-3 list-group-item-dark mb-2">Horror</li>
+  <li style="color:rgb(255, 192, 198);font-size:35px"class="list-group-item px-3 border-0 rounded-3 list-group-item-dark mb-2">Romance</li>
+  <li style="color:rgb(255, 192, 198);font-size:35px"class="list-group-item px-3 border-0 rounded-3 list-group-item-dark mb-2">Family</li>
+</ul> -->
+
+
+<div class="hand-commands">
+  <ul> 
+    <li style="color:black;font-size:30px;">Gesture Lists</li>
+    <li style="color:rgb(255, 192, 198);font-size:20px;"><i>Hand Pointing Gesture-> </i> Next Browse Type</li>
+    <li style="color:rgb(255, 192, 198);font-size:20px"><i>Open Hand Gesture-> </i> Browse Movies of Current Browse Type</li>
+    <li style="color:rgb(255, 192, 198);font-size:20px"><i>Open Hand and Closed Hand Gesture-> </i> Go to Favorite Movies</li>
+  </ul>
+</div>
+</div>

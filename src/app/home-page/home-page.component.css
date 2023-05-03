@@ -1,0 +1,14 @@
+.hand-commands
+{
+    margin-top: 600px;
+    margin-right: 1100px;
+}
+
+.horizontal{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display:inline-block;
+    margin-left: 70ch;
+margin-bottom: 15ch;
+
+}
